@@ -1,5 +1,95 @@
-/* Header */
+/* HEADER */
 .logo-img {
     height: 48px;
     width: 48px;
 }
+
+/* POSTS */
+
+.row {
+    padding: 50px 0;
+}
+.seperator {
+    margin-bottom: 30px;
+    width: 35px;
+    height: 3px;
+    background: #777;
+    border: none;
+}
+.title {
+    text-align: center;
+}
+.title .row {
+    padding: 50px 0 0;
+}
+.title h1 {
+    text-transform: uppercase;
+}
+.title .seperator {
+    margin: 0 auto 10px;
+}
+
+.item {
+    position: relative;
+    margin-bottom: 30px;
+    min-height: 1px;
+    float: left;
+    -webkit-backface-visibility: hidden;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.item .item-in {
+    background: #fff;
+    padding: 40px;
+    position: relative;
+}
+.item .item-in:hover:before {
+    width: 100%;
+}
+.item .item-in::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    height: 2px;
+    width: 0%;
+    background: #333;
+    right: 0px;
+    -webkit-transition: width 0.4s;
+    transition: width 0.4s;
+}
+
+.item .icon {
+    position: absolute;
+    top: 27px;
+    left: -16px;
+    cursor: pointer;
+}
+.item .icon a {
+    font-family: 'Merriweather', serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #999;
+    text-transform: none;
+}
+.item .icon svg {
+    width: 32px;
+    height: 32px;
+    float: left;
+}
+.item .icon .icon-topic {
+    opacity: 0;
+    padding-left: 0px;
+    transition: 0.4s;
+    display: inline-block;
+    top: 0px;
+    position: relative;
+}
+.item .icon:hover .icon-topic {
+    opacity: 1;
+    padding-left: 10px;
+}
+
