@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, redirect # импортируем класс Flask из библиотеки flask
 from flask_sqlalchemy import SQLAlchemy
 
-app = Flask(__name__) # создаем класс приложения, __name__ - имя приложения
+app = Flask(__name__) # создаем объект класса приложения, __name__ - имя приложения
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///hackathon.db' # конфигурация бд
 db = SQLAlchemy(app) # подключение бд
 

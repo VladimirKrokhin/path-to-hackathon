@@ -36,4 +36,5 @@ Linux/Windows: `python create_db.py`
 * папка static содержит статические файлы (CSS-файлы, картинки и пр.)
 * папка instance содержит файл бд hackathon.db
 * create_db.py - скрипт на питоне, создающий бд 
-5353gfgdfgdfgsdfgsf
+
+adfdfgdfsgdsfgdfg
